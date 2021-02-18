@@ -1,1 +1,8 @@
-$bg-generic-image:url('../back.jpg')
+@mixin btn{
+  height: 50px;
+  line-height: 50px;
+  width: 200px;
+  padding: 0 20px;
+  display: inline-block;
+  text-align: center;
+}
