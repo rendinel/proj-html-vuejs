@@ -353,3 +353,77 @@
   }
 }
 // video end
+
+// faq start
+.faq-container{
+  width: 100%;
+  height: 800px;
+  background-color: $color-gray-one;
+}
+// faq end
+
+// footer logo start
+.footer-logo{
+  width: 100%;
+  height: 150px;
+  background-color: $color-gray-two;
+  @include fl-col-c-c;
+  & > .foot-container{
+    width: 90%;
+    margin: 0 auto;
+    @include fl-row-sa-ce;
+    & > .listfoot{
+      display: flex;
+      flex-direction: row;
+      & > ul{
+        list-style: none;
+        & > li{
+          margin-right: 15px;
+          color: $color-hr-gray;
+        }
+      }
+    }
+  }
+}
+// footer logo end
+
+// copyright footer
+.copy-footer{
+  width: 100%;
+  height: 100px;
+  background-color: $color-gray-one;
+  & > .foot-container{
+    width: 90%;
+    height: 100px;
+    margin: 0 auto;
+    @include fl-row-sa-ce;
+    & > .copy-list-left{
+      @include fl-row;
+      & > ul{
+        list-style: none;
+        & > li{
+          margin-right: 15px;
+          color: $color-icon;
+          font-size: 12px;
+        }
+      }
+    }
+    & > .copy-list-right{
+      @include fl-row;
+      & > ul{
+        list-style: none;
+        & > li{
+          margin-right: 15px;
+          width: 35px;
+          height: 35px;
+          background-color: $color-gray-two;
+          @include fl-col-c-c;
+          & > i {
+            color: $color-icon;
+          }
+        }
+      }
+    }
+  }
+}
+// copyright footer end

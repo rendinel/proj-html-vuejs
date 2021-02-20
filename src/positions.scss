@@ -1,3 +1,8 @@
+@mixin fl-row {
+  display: flex;
+  flex-direction: row;
+}
+
 @mixin fl-row-sb {
   display: flex;
   flex-direction: row;
@@ -35,4 +40,11 @@ align-items: center;
   content: '';
   display:table;
   clear: both;
+}
+
+@mixin fl-row-sa-ce {
+  display:flex;
+  flex-direction:row;
+  justify-content: space-between;
+  align-items: center;
 }

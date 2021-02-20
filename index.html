@@ -145,6 +145,49 @@
       <img src="images/band_interview_play_icon.png" alt="">
     </div>
     <!-- fine video container -->
+
+    <!-- faq section -->
+    <div class="faq-container">
+      <h2>Live Dates</h2>
+      <p>{{commonParagraph}}</p>
+    </div>
+    <!-- faq section fine -->
+
+    <!-- date section -->
+    <div class="news-bar">
+      <p>VIEW ALL LIVE DATES</p>
+    </div>
+    <!-- date section -->
+
+    <!-- footer logo start -->
+    <div class="footer-logo">
+      <div class="foot-container">
+        <span><img src="images/logo_footer.png"></span>
+        <span class="listfoot">
+          <ul v-for="item in dropdownVoices" :key="item.voice">
+            <li> {{item.voice}} </li>
+          </ul>
+        </span>
+      </div>
+    </div>
+    <!-- footer logo end -->
+
+    <!-- copyright footer -->
+    <div class="copy-footer">
+      <div class="foot-container">
+        <div class="copy-list-left">
+          <ul v-for="item in copyrightVoices" :key="item.voice">
+            <li> {{item.voice}} </li>
+          </ul>
+        </div>
+        <div class="copy-list-right">
+          <ul v-for="item in socialVoices" :key="item.voice">
+            <li> <i v-bind:class="item.voice"></i> </li>
+          </ul>
+        </div>
+      </div>-
+    </div>
+    <!-- copyright footer end -->
   </div>
  <!-- fine contenitore app -->
 
