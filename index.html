@@ -11,27 +11,31 @@
   </head>
   <body>
  <!-- contenitore app  -->
-    <div class="container" id="root">
+  <div class="wrapper" id="root">
+
+    <!-- contenitore jumbotron/header with dropdown -->
+    <div class="container">
 
       <div class="jumbotron">
         <header>
           <img  src="images/avada-music-logo.png" alt="">
-          <i class="fas fa-bars icon"></i>
+          <i class="fas fa-bars icon" ></i>
+          <!-- <i class="fas fa-bars icon" @click="dropdownOn"></i> -->
         </header>
 
         <div class="jumbotron-text">
           <h1>Untold Stories</h1>
           <div class="caption">There is an untold stories behind every favorite song.</div>
           <div class="">
-            <span class="btn-one">LATEST ALBUM</span>
-            <span class="btn-two">LIVE DATES</span>
+            <div class="btn-one">LATEST ALBUM</div>
+            <div class="btn-two">LIVE DATES</div>
           </div>
         </div>
 
       </div>
 
       <div class="dropdown">
-
+      <!-- <div class="dropdown" :style="'opacity:' + opacityList[opacityIdx]"> -->
         <header>
           <img src="images/avada-music-logo.png" alt="">
           <i class="fas fa-times icon"></i>
@@ -44,6 +48,104 @@
       </div>
 
     </div>
+    <!-- contenitore jumbotron/header with dropdown end -->
+
+    <!-- contenitore sub jumbotron -->
+    <div class="under-jumbo">
+      <div class="pinkbar"></div>
+      <h2>Music Is Life</h2>
+      <hr>
+      <p class="under-jumbo-txt">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum finibus cursus egestas. Cras quis vehicula <br> quam, a tempus velit. Ut feugiat augue in sodales luctus
+      </p>
+    </div>
+    <!-- contenitore sub jumbotron end -->
+
+    <!-- contenitore tabella img -->
+    <div class="tab-img">
+      <h2>Latest Band News</h2>
+      <hr>
+      <p class="tab-img-txt">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum finibus cursus egestas. Cras quis vehicula <br> quam, a tempus velit. Ut feugiat augue in sodales luctus
+      </p>
+      <div class="img-container">
+        <div class="left">
+          <div class="first">
+            <div class="card-top">
+              <p class="card-top-title">{{titles[2]}}</p>
+            </div>
+            <div class="card-bottom">
+              <div class="card-bottom-title"><h4>{{titles[2]}}</h4></div>
+              <p class="card-bottom-text">{{paragraphCard}}</p>
+            </div>
+          </div>
+          <div class="second">
+            <div class="sleft fl">
+              <div class="card-top">
+                <p class="card-top-title">{{titles[3]}}</p>
+              </div>
+              <div class="card-bottom">
+                <div class="card-bottom-title"><h4>{{titles[3]}}</h4></div>
+                <p class="card-bottom-text">{{paragraphCard}}</p>
+              </div>
+            </div>
+            <div class="sright fr">
+              <div class="card-top">
+                <p class="card-top-title">{{titles[4]}}</p>
+              </div>
+              <div class="card-bottom">
+                <div class="card-bottom-title"><h4>{{titles[4]}}</h4></div>
+                <p class="card-bottom-text">{{paragraphCard}}</p>
+              </div>
+            </div>
+          </div>
+          <div class="third">
+            <div class="card-top">
+              <p class="card-top-title">{{titles[5]}}</p>
+            </div>
+            <div class="card-bottom">
+              <div class="card-bottom-title"><h4>{{titles[5]}}</h4></div>
+              <p class="card-bottom-text">{{paragraphCard}}</p>
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <div class="up">
+            <div class="card-top">
+              <p class="card-top-title">{{titles[0]}}</p>
+            </div>
+            <div class="card-bottom">
+              <div class="card-bottom-title"><h4>{{titles[0]}}</h4></div>
+              <p class="card-bottom-text">{{paragraphCard}}</p>
+            </div>
+          </div>
+          <div class="down">
+            <div class="card-top">
+              <p class="card-top-title">{{titles[1]}}</p>
+            </div>
+            <div class="card-bottom">
+              <h4 class="card-bottom-title">{{titles[1]}}</h4>
+              <p class="card-bottom-text">{{paragraphCard}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- fine contenitore tabella img -->
+
+    <!-- latest news -->
+    <div class="news-bar">
+      <p>VIEW ALL LATEST NEWS</p>
+    </div>
+    <!-- fine latest news -->
+
+    <!-- video container -->
+    <div class="video-container">
+      <p>I just listened to it and said to myself, “Man, I really love this <br> album.” Still, today, it just sounds so fresh. It sounds full of ideas. <br> These guys knew what they were doing. They’re good. And they’re <br> inventive. I haven’t heard anything this year that’s as inventive. I <br> don’t really expect to.”</p>
+      <img src="images/band_interview_play_icon.png" alt="">
+    </div>
+    <!-- fine video container -->
+  </div>
  <!-- fine contenitore app -->
 
 

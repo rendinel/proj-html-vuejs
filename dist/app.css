@@ -18,10 +18,6 @@
   float: right;
 }
 
-.isActive {
-  opacity: 1;
-}
-
 .btn-one {
   height: 50px;
   line-height: 50px;
@@ -57,7 +53,7 @@
 }
 
 .jumbotron {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   background-image: url("../images/home_slider.jpg");
   background-color: #cccccc;
@@ -92,7 +88,7 @@
 }
 
 .dropdown {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   padding-top: 50px;
   background-color: #EC4858;
@@ -118,4 +114,243 @@
   color: #fff;
   font-size: 35px;
   padding: 25px 0 25px 0;
+}
+
+.under-jumbo {
+  width: 100%;
+  height: 325px;
+  background-color: #323844;
+}
+.under-jumbo > .pinkbar {
+  width: 200px;
+  height: 25px;
+  background-color: #EC4858;
+  margin: 0 auto;
+}
+.under-jumbo > h2 {
+  font-size: 75px;
+  text-align: center;
+  color: #fff;
+  padding: 75px 0 25px 0;
+}
+.under-jumbo > hr {
+  width: 200px;
+  border: 2px solid #444E62;
+  margin: 0 auto;
+}
+.under-jumbo-txt {
+  font-size: 15px;
+  font-style: italic;
+  color: #444E62;
+  text-align: center;
+  padding: 50px 0 75px 0;
+}
+
+.tab-img {
+  width: 100%;
+  height: 2200px;
+  background-color: #252A33;
+}
+.tab-img > h2 {
+  font-size: 75px;
+  text-align: center;
+  color: #fff;
+  padding: 75px 0 25px 0;
+}
+.tab-img > hr {
+  width: 200px;
+  border: 2px solid #444E62;
+  margin: 0 auto;
+}
+.tab-img-txt {
+  font-size: 15px;
+  font-style: italic;
+  color: #444E62;
+  text-align: center;
+  padding: 50px 0 75px 0;
+}
+.tab-img > .img-container {
+  width: 1200px;
+  height: 1800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.tab-img > .img-container > .left {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.tab-img > .img-container > .left > .first {
+  width: 95%;
+  height: 24%;
+  background-image: url("../images/blog_music_techo.jpg");
+  position: relative;
+}
+.tab-img > .img-container > .left > .second {
+  width: 95%;
+  height: 48%;
+}
+.tab-img > .img-container > .left > .second > .sleft {
+  width: 47.5%;
+  height: 100%;
+  background-image: url("../images/blog-post3.jpg");
+  position: relative;
+}
+.tab-img > .img-container > .left > .second > .sright {
+  width: 47.5%;
+  height: 100%;
+  background-image: url("../images/blog-post4.jpg");
+  position: relative;
+}
+.tab-img > .img-container > .left > .third {
+  width: 95%;
+  height: 24%;
+  background-image: url("../images/blog_flavor_rock-1200x600.jpg");
+  position: relative;
+}
+.tab-img > .img-container > .right {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.tab-img > .img-container > .right > .up {
+  width: 95%;
+  height: 49%;
+  background-image: url("../images/blog-post1.jpg");
+  position: relative;
+}
+.tab-img > .img-container > .right > .down {
+  width: 95%;
+  height: 49%;
+  background-color: pink;
+  background-image: url("../images/blog-post2.jpg");
+  position: relative;
+}
+
+.card-bottom {
+  width: 100%;
+  height: 20%;
+  background-color: #323844;
+  position: absolute;
+  bottom: 0;
+  opacity: 1;
+}
+
+.up:hover .card-bottom {
+  opacity: 0;
+}
+
+.down:hover .card-bottom {
+  opacity: 0;
+}
+
+.first:hover .card-bottom {
+  opacity: 0;
+}
+
+.third:hover .card-bottom {
+  opacity: 0;
+}
+
+.sright:hover .card-bottom {
+  opacity: 0;
+}
+
+.sleft:hover .card-bottom {
+  opacity: 0;
+}
+
+.card-bottom-title {
+  text-align: center;
+  color: #EC4858;
+  font-size: 18px;
+  padding: 15px 0 15px 0;
+}
+
+.card-bottom-text {
+  text-align: center;
+  font-size: 14px;
+  color: #444E62;
+}
+
+.card-top {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: #EC4858;
+  opacity: 0;
+}
+
+.card-top-title {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-style: italic;
+  font-size: 18px;
+  white-space: nowrap;
+}
+
+.up:hover .card-top {
+  opacity: 0.5;
+}
+
+.down:hover .card-top {
+  opacity: 0.5;
+}
+
+.first:hover .card-top {
+  opacity: 0.5;
+}
+
+.sright:hover .card-top {
+  opacity: 0.5;
+}
+
+.sleft:hover .card-top {
+  opacity: 0.5;
+}
+
+.third:hover .card-top {
+  opacity: 0.5;
+}
+
+.news-bar {
+  width: 100%;
+  height: 150px;
+  background-color: #EC4858;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.news-bar:hover {
+  background-color: #fff;
+  color: black;
+}
+
+.video-container {
+  width: 100%;
+  height: 800px;
+  background-image: url("../images/home-testimonial-parallax.jpg");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.video-container > p {
+  font-size: 30px;
+  color: #fff;
+  font-style: italic;
+  padding-bottom: 25px;
 }
