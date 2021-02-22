@@ -22,6 +22,33 @@
   float: right;
 }
 
+.btn-one{
+  @include btn;
+  background-color: $color-pink;
+  color: $color-white;
+  margin-right: 10px;
+  font-size: 15px;
+  &:hover{
+    background-color: $color-white;
+    color: black;
+  }
+}
+
+.btn-one:hover{
+  background-color: $color-white;
+  color: black;
+}
+
+.btn-two{
+  @include btn;
+  border: 1px solid $color-white;
+  color: $color-white;
+  font-size: 15px;
+}
+
+// fine classi comuni
+
+// button up
 .arrow-btn{
   position: fixed;
   bottom:30px;
@@ -42,101 +69,77 @@
     }
   }
 }
-.btn-one{
-  @include btn;
-  background-color: $color-pink;
-  color: $color-white;
-  margin-right: 10px;
-  font-size: 15px;
-  // &:hover{
-  //   background-color: $color-white;
-  //   color: black;
-  // }
-}
-
-.btn-one:hover{
-  background-color: $color-white;
-  color: black;
-}
-
-.btn-two{
-  @include btn;
-  border: 1px solid $color-white;
-  color: $color-white;
-  font-size: 15px;
-}
-
-
-// fine classi comuni
+// button up end
 
 // jumbotron con header inizio
 .container{
   position: relative;
-}
-
-.jumbotron{
- width: 100%;
- height:100vh;
- background-image: url('../images/home_slider.jpg');
- background-color: #cccccc;
- background-position: center;
- background-repeat: no-repeat;
- background-size: cover;
- padding-top: 50px;
-  & > header{
-    width: 90%;
-    margin: 0 auto;
-    height: 80px;
-    @include fl-row-sb;
-  }
-  &-text{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    & > h1{
-      font-size: 150px;
-      padding-top: 150px;
-      color: $color-white;
+  .jumbotron{
+   width: 100%;
+   height:100vh;
+   background-image: url('../images/home_slider.jpg');
+   background-color: #cccccc;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   padding-top: 50px;
+    & > header{
+      width: 90%;
+      margin: 0 auto;
+      height: 80px;
+      @include fl-row-sb;
     }
-    & > .caption{
-      font-size: 25px;
-      font-style: italic;
-      padding: 35px 0 35px 0;
-      color: $color-white;
-    }
-  }
-}
-
-.dropdown{
-  width: 100%;
-  height:100vh;
-  padding-top: 50px;
-  background-color: $color-pink;
-  position: absolute;
-  top: 0;
-  right: 0;
-  opacity: 0;
-  // &:hover{
-  //   opacity: 1;
-  // }
-  & > header{
-    width: 90%;
-    height: 80px;
-    margin: 0 auto;
-    @include fl-row-sb;
-  }
-  & > ul{
-    list-style: none;
-    text-align: center;
-    padding-top: 25px;
-    & > li {
-      color: $color-white;
-      font-size: 35px;
-      padding: 25px 0 25px 0;
+    & > .jumbotext{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      & > h1{
+        font-size: 150px;
+        padding-top: 150px;
+        color: $color-white;
+      }
+      & > .caption{
+        font-size: 25px;
+        font-style: italic;
+        padding: 35px 0 35px 0;
+        color: $color-white;
+      }
     }
   }
-
+  .dropdown{
+    width: 100%;
+    height:100vh;
+    padding-top: 50px;
+    background-color: $color-pink;
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    // &:hover{
+    //   opacity: 1;
+    // }
+    & > header{
+      width: 90%;
+      height: 80px;
+      margin: 0 auto;
+      @include fl-row-sb;
+    }
+    & > ul{
+      list-style: none;
+      text-align: center;
+      padding-top: 25px;
+      & > li {
+        color: $color-white;
+        font-size: 35px;
+        padding: 25px 0 25px 0;
+      }
+    }
+  }
 }
+
+
+
+
 // jumbotron con header fine
 
 // contenitore sub jumbotron

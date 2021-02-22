@@ -18,6 +18,40 @@
   float: right;
 }
 
+.btn-one {
+  height: 50px;
+  line-height: 50px;
+  width: 200px;
+  padding: 0 20px;
+  display: inline-block;
+  text-align: center;
+  background-color: #0088cc;
+  color: #fff;
+  margin-right: 10px;
+  font-size: 15px;
+}
+.btn-one:hover {
+  background-color: #fff;
+  color: black;
+}
+
+.btn-one:hover {
+  background-color: #fff;
+  color: black;
+}
+
+.btn-two {
+  height: 50px;
+  line-height: 50px;
+  width: 200px;
+  padding: 0 20px;
+  display: inline-block;
+  text-align: center;
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: 15px;
+}
+
 .arrow-btn {
   position: fixed;
   bottom: 30px;
@@ -39,41 +73,10 @@
   font-size: 25px;
 }
 
-.btn-one {
-  height: 50px;
-  line-height: 50px;
-  width: 200px;
-  padding: 0 20px;
-  display: inline-block;
-  text-align: center;
-  background-color: #EC4858;
-  color: #fff;
-  margin-right: 10px;
-  font-size: 15px;
-}
-
-.btn-one:hover {
-  background-color: #fff;
-  color: black;
-}
-
-.btn-two {
-  height: 50px;
-  line-height: 50px;
-  width: 200px;
-  padding: 0 20px;
-  display: inline-block;
-  text-align: center;
-  border: 1px solid #fff;
-  color: #fff;
-  font-size: 15px;
-}
-
 .container {
   position: relative;
 }
-
-.jumbotron {
+.container .jumbotron {
   width: 100%;
   height: 100vh;
   background-image: url("../images/home_slider.jpg");
@@ -83,7 +86,7 @@
   background-size: cover;
   padding-top: 50px;
 }
-.jumbotron > header {
+.container .jumbotron > header {
   width: 90%;
   margin: 0 auto;
   height: 80px;
@@ -91,34 +94,33 @@
   flex-direction: row;
   justify-content: space-between;
 }
-.jumbotron-text {
+.container .jumbotron > .jumbotext {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.jumbotron-text > h1 {
+.container .jumbotron > .jumbotext > h1 {
   font-size: 150px;
   padding-top: 150px;
   color: #fff;
 }
-.jumbotron-text > .caption {
+.container .jumbotron > .jumbotext > .caption {
   font-size: 25px;
   font-style: italic;
   padding: 35px 0 35px 0;
   color: #fff;
 }
-
-.dropdown {
+.container .dropdown {
   width: 100%;
   height: 100vh;
   padding-top: 50px;
-  background-color: #EC4858;
+  background-color: #0088cc;
   position: absolute;
   top: 0;
   right: 0;
   opacity: 0;
 }
-.dropdown > header {
+.container .dropdown > header {
   width: 90%;
   height: 80px;
   margin: 0 auto;
@@ -126,12 +128,12 @@
   flex-direction: row;
   justify-content: space-between;
 }
-.dropdown > ul {
+.container .dropdown > ul {
   list-style: none;
   text-align: center;
   padding-top: 25px;
 }
-.dropdown > ul > li {
+.container .dropdown > ul > li {
   color: #fff;
   font-size: 35px;
   padding: 25px 0 25px 0;
@@ -145,7 +147,7 @@
 .under-jumbo > .pinkbar {
   width: 200px;
   height: 25px;
-  background-color: #EC4858;
+  background-color: #0088cc;
   margin: 0 auto;
 }
 .under-jumbo > h2 {
@@ -291,7 +293,7 @@
 
 .card-bottom-title {
   text-align: center;
-  color: #EC4858;
+  color: #0088cc;
   font-size: 18px;
   padding: 15px 0 15px 0;
 }
@@ -306,7 +308,7 @@
   width: 100%;
   height: 100%;
   position: relative;
-  background-color: #EC4858;
+  background-color: #0088cc;
   opacity: 0;
 }
 
@@ -348,7 +350,7 @@
 .news-bar {
   width: 100%;
   height: 150px;
-  background-color: #EC4858;
+  background-color: #0088cc;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -418,7 +420,7 @@
 }
 .faq-container > .faq-section > .faq-up > .faq-date {
   font-size: 18px;
-  color: #EC4858;
+  color: #0088cc;
 }
 .faq-container > .faq-section > .faq-down {
   height: 300px;
@@ -448,7 +450,7 @@
   color: #444E62;
 }
 .faq-container > .faq-section > .faq-down > .info-map > .btn-map {
-  background-color: #EC4858;
+  background-color: #0088cc;
   color: #fff;
   margin-right: 10px;
   font-size: 15px;

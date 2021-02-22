@@ -23,11 +23,11 @@
       <div class="jumbotron">
         <header>
           <img  src="images/avada-music-logo.png" alt="">
-          <i class="fas fa-bars icon" ></i>
-          <!-- <i class="fas fa-bars icon" @click="dropdownOn"></i> -->
+          <!-- <i class="fas fa-bars icon" ></i> -->
+          <i class="fas fa-bars icon" @click="dropdownOn"></i>
         </header>
 
-        <div class="jumbotron-text">
+        <div class="jumbotext">
           <h1>Untold Stories</h1>
           <div class="caption">There is an untold stories behind every favorite song.</div>
           <div class="">
@@ -38,8 +38,8 @@
 
       </div>
 
-      <div class="dropdown">
-      <!-- <div class="dropdown" :style="'opacity:' + opacityList[opacityIdx]"> -->
+      <!-- <div class="dropdown"> -->
+      <div class="dropdown" :style="'opacity:opacityList[opacityIdx]' + opacityList[opacityIdx]">
         <header>
           <img src="images/avada-music-logo.png" alt="">
           <i class="fas fa-times icon"></i>

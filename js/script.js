@@ -48,13 +48,12 @@ var app = new Vue({
    opacityIdx:0
  },
  method:{
- //   dropdownON: function() {
- //    this.opacityIDX += 1;
- //  },
- //  dropdownOff: function() {
- //   this.opacityIDX -= 1;
- // }
-
+   dropdownOn: function() {
+    this.opacityIdx += 1;
+  },
+  dropdownOff: function() {
+   this.opacityIdx -= 1;
+ }
  }
 });
 Vue.config.devtools = true;
