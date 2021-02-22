@@ -21,6 +21,15 @@ var app = new Vue({
      { voice: 'fab fa-instagram' },
      { voice: 'fab fa-youtube' },
    ],
+   faqVoices:[
+     { voice: '17/08/2020 GEM FESTIVAL 2020 ANAKALIA, GEORGIA' },
+     { voice: '24/09/2020 GROOVEFEST DOMINICAL REPUBLIC' },
+     { voice: '31/10/2020 OASIS FESTIVAL 2020 MARRAKECH, MOROCCO' },
+     { voice: '07/11/2020 MOGA FESTIVAL - ESSAOURIA, MOROCCO' },
+     { voice: '10/12/2020 ENVISION FESTIVAL - UVITA, COSTA RICA' }
+   ],
+   plusIcon:'fas fa-plus',
+   mapTitle:'Untold Stories',
    titles:[
       'Taking it back to the old school',
       'Sharing the stage with a legend',

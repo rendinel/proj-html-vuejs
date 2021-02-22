@@ -18,6 +18,27 @@
   float: right;
 }
 
+.arrow-btn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 9;
+}
+.arrow-btn > a {
+  height: 39px;
+  width: 37px;
+  text-align: center;
+  background: #1b1b1b;
+  display: block;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.arrow-btn > a > i {
+  color: #f2f2f2;
+  line-height: 39px;
+  font-size: 25px;
+}
+
 .btn-one {
   height: 50px;
   line-height: 50px;
@@ -357,8 +378,90 @@
 
 .faq-container {
   width: 100%;
-  height: 800px;
+  padding-bottom: 10px;
+  background-color: #252A33;
+}
+.faq-container > h2 {
+  font-size: 75px;
+  text-align: center;
+  color: #fff;
+  padding: 75px 0 25px 0;
+}
+.faq-container > p {
+  font-size: 15px;
+  font-style: italic;
+  color: #444E62;
+  text-align: center;
+  padding: 50px 0 75px 0;
+}
+.faq-container > hr {
+  width: 200px;
+  border: 2px solid #444E62;
+  margin: 0 auto;
+}
+.faq-container > .faq-section {
+  width: 1200px;
+  margin: 0 auto;
   background-color: #323844;
+}
+.faq-container > .faq-section > .faq-up {
+  height: 50px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.faq-container > .faq-section > .faq-up > .plus {
+  color: #fff;
+  margin: 0 15px 0 15px;
+}
+.faq-container > .faq-section > .faq-up > .faq-date {
+  font-size: 18px;
+  color: #EC4858;
+}
+.faq-container > .faq-section > .faq-down {
+  height: 300px;
+  width: 100%;
+  display: none;
+  flex-direction: row;
+  opacity: 0;
+}
+.faq-container > .faq-section > .faq-down > .map {
+  width: 30%;
+  height: 100%;
+  background-color: orange;
+}
+.faq-container > .faq-section > .faq-down > .info-map {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding-left: 15px;
+}
+.faq-container > .faq-section > .faq-down > .info-map > h4 {
+  color: #fff;
+}
+.faq-container > .faq-section > .faq-down > .info-map > p {
+  color: #444E62;
+}
+.faq-container > .faq-section > .faq-down > .info-map > .btn-map {
+  background-color: #EC4858;
+  color: #fff;
+  margin-right: 10px;
+  font-size: 15px;
+  height: 50px;
+  line-height: 50px;
+  width: 200px;
+  padding: 0 20px;
+  display: inline-block;
+  text-align: center;
+}
+.faq-container > .faq-section > .faq-down > .info-map > .btn-map:hover {
+  background-color: #fff;
+  color: black;
 }
 
 .footer-logo {

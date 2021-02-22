@@ -13,6 +13,10 @@
  <!-- contenitore app  -->
   <div class="wrapper" id="root">
 
+    <div class="arrow-btn">
+      <a href="#"> <i class="fas fa-arrow-up"></i> </a>
+    </div>
+
     <!-- contenitore jumbotron/header with dropdown -->
     <div class="container">
 
@@ -149,7 +153,30 @@
     <!-- faq section -->
     <div class="faq-container">
       <h2>Live Dates</h2>
+      <hr>
       <p>{{commonParagraph}}</p>
+      <div class="faq-section" v-for="item in faqVoices" :key="item.voice">
+        <div class="faq-up">
+          <div class="plus">
+            <i v-bind:class="plusIcon"></i>
+          </div>
+          <div class="faq-date">
+            <p>{{item.voice}}</p>
+          </div>
+        </div>
+        <div class="faq-down">
+          <div class="map">
+
+          </div>
+          <div class="info-map">
+            <h4>{{mapTitle}}</h4>
+            <p>{{commonParagraph}}</p>
+            <div class="btn-map">
+              BOOK NOW
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- faq section fine -->
 
@@ -185,7 +212,7 @@
             <li> <i v-bind:class="item.voice"></i> </li>
           </ul>
         </div>
-      </div>-
+      </div>
     </div>
     <!-- copyright footer end -->
   </div>

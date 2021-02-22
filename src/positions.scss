@@ -3,6 +3,13 @@
   flex-direction: row;
 }
 
+@mixin fl-row-st-c{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
 @mixin fl-row-sb {
   display: flex;
   flex-direction: row;
