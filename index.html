@@ -23,8 +23,7 @@
       <div class="jumbotron">
         <header>
           <img  src="images/avada-music-logo.png" alt="">
-          <!-- <i class="fas fa-bars icon" ></i> -->
-          <i class="fas fa-bars icon" @click="dropdownOn"></i>
+          <i class="fas fa-bars icon" v-on:click="active =!active" ></i>
         </header>
 
         <div class="jumbotext">
@@ -39,7 +38,7 @@
       </div>
 
       <!-- <div class="dropdown"> -->
-      <div class="dropdown" :style="'opacity:opacityList[opacityIdx]' + opacityList[opacityIdx]">
+      <div class="dropdown" v-show="active">
         <header>
           <img src="images/avada-music-logo.png" alt="">
           <i class="fas fa-times icon"></i>

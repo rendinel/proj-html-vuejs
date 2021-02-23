@@ -52,6 +52,11 @@
   font-size: 15px;
 }
 
+.btn-two:hover {
+  background-color: #fff;
+  color: black;
+}
+
 .arrow-btn {
   position: fixed;
   bottom: 30px;
@@ -118,7 +123,7 @@
   position: absolute;
   top: 0;
   right: 0;
-  opacity: 0;
+  display: none;
 }
 .container .dropdown > header {
   width: 90%;
